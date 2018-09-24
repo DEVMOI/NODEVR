@@ -1,4 +1,7 @@
 # NODE VR
+
+[DISCORD](https://discord.gg/ZgDHrQa)
+
 > AFRAME | VUEJS | ELECTRON
 
 

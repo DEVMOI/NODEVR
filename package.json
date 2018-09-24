@@ -10,7 +10,15 @@
     "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
+    "@ekolabs/aframe-spritesheet-component": "^1.2.0",
     "aframe": "^0.8.2",
+    "aframe-animation-component": "^5.1.1",
+    "aframe-animation-timeline-component": "^1.6.0",
+    "aframe-environment-component": "^1.1.0",
+    "aframe-extras": "^4.2.0",
+    "aframe-particle-system-component": "^1.0.11",
+    "aframe-physics-system": "^3.2.0",
+    "aframe-text-geometry-component": "^0.5.1",
     "electron": "^3.0.0",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.17",

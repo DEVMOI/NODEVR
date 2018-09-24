@@ -21,6 +21,7 @@
     "aframe-text-geometry-component": "^0.5.1",
     "electron": "^3.0.0",
     "register-service-worker": "^1.0.0",
+    "v-hotkey": "^0.2.3",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"

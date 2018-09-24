@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/vr">VR</router-link>
+      <router-link to="/vr">
+        <button class="btn"></button>
+      </router-link>
     </div>
     <router-view/>
   </div>
@@ -16,16 +17,5 @@
   text-align: center;
   color: #2c3e50;
 }
-#nav {
-  margin: auto 5%;
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-  z-index: -1;
-}
+
 </style>

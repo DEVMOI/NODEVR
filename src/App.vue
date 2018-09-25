@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/vr">
-        <button class="btn"></button>
+        <button class="btn">Get Started</button>
       </router-link>
     </div>
     <router-view/>

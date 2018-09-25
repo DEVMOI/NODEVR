@@ -1,28 +1,29 @@
-<template>
-  <div v-hotkey="keymap" class="vr">
+  <template>
+  <div class="vr">
     <VrTools />
-  </div>
+    <button @hotkey="keymap"></button>
+  </div> 
 </template>
 <script>
+import VueHotKey from "v-hotkey";
 import VrTools from "@/components/VrTool/VrTools.vue";
 export default {
   name: "vr",
   components: { VrTools },
+  methods: {
+    goBack() {
+      console("wo");
+      this.$router.push({ path: "/" });
+    }
+  },
   computed: {
     keymap() {
       return {
         // bind to hotkey
-        "alt + b": {
-          keydown: this.goBack
-        }
+        "ctrl+alt+b": this.goBack
       };
     }
-  },
-  methods: {
-    goBack() {
-      this.$router.push({ path: '/  ' })
-    }
-  }
+  } 
 };
 </script>
 <style>

@@ -3,13 +3,12 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import './registerServiceWorker';
-
-import BS4 from 'bootstrap/dist/css/bootstrap.min.css';
-import VueHotkey from 'v-hotkey';
+import VueHotKey from 'v-hotkey';
+import'@/assets/bootstrap.min.css';
 
 Vue.config.productionTip = false;
 
-Vue.use(BS4, VueHotkey);
+Vue.use(VueHotKey);
 
 new Vue({
   router,

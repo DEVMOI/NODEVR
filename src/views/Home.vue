@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Home msg="BUILT WITH: AFRAME| VUE | ELECTRON"/>
+    <Home />
   </div>
 </template>
 
@@ -9,9 +9,9 @@
 import Home from '@/components/Home.vue'
 
 export default {
-  name: 'Settings',
+  name: 'home',
   components: {
     Home
-  }
+  },
 }
 </script>

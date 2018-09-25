@@ -20,7 +20,6 @@
 }
 .toolbar{
   max-height:25px;
-  
 }
 .toolbar a:hover,
 .toolbar a{

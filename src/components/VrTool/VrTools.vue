@@ -8,6 +8,7 @@
     </div>
 </template>
 <script>
+import aframe from "aframe";
 import "aframe-animation-component";
 import "aframe-animation-timeline-component";
 import "aframe-extras";

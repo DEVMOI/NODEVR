@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <Home msg="VUE | AFRAME | ELECTRON"/>
-    <p> Welcome to the VR Builder </p>
+    <Home msg="BUILT WITH: AFRAME| VUE | ELECTRON"/>
   </div>
 </template>
 
@@ -10,7 +9,7 @@
 import Home from '@/components/Home.vue'
 
 export default {
-  name: 'home',
+  name: 'Settings',
   components: {
     Home
   }

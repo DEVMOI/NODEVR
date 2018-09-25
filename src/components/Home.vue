@@ -1,32 +1,24 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div class="greetings">
+    <p class="lead">Welcome to the NODEVR</p>
+    <p>A Desktop Client for Creating Vr Environments</p>
+    <p class="fnt-monospace fnt-11">{{ msg }}</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'HomeBase',
   props: {
     msg: String
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
+<style>
+.fnt-monospace{
+  font-family: monospace;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+.fnt-11{
+  font-size: 11px;
 }
 </style>

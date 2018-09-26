@@ -4,11 +4,15 @@ import router from './router';
 import store from './store';
 import './registerServiceWorker';
 import VueHotKey from 'v-hotkey';
-import'@/assets/bootstrap.min.css';
+import BootstrapVue from 'bootstrap-vue'
+import '@/assets/bootstrap.min.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'jquery'
 
 Vue.config.productionTip = false;
 
-Vue.use(VueHotKey);
+Vue.use(VueHotKey, BootstrapVue);
 
 new Vue({
   router,

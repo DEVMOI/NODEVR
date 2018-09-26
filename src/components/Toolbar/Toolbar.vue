@@ -1,18 +1,30 @@
 <template>
-    <nav class="toolbar px-0">
-        <div class="navbar justify-content-start">
-        <li class="nav-item nav-link pl-0 file-info">
+    <nav class="toolbar px-0 navbar justify-content-start">
+        <li class="pl-1 toolbar-item no-list-style file-info">
             File
         </li>
-        <li class="nav-link nav-item ml-1"><router-link to="/">Edit</router-link></li>
-        <li class="nav-link nav-item "><router-link to="/vr">VR</router-link></li>
-        <li class="nav-link nav-item "><router-link to="/settings">Settings</router-link></li>
-        <li>Help</li>
-        </div>
+        <li class="toolbar-item no-list-style  edit-info">
+            <router-link to="/">
+            Edit
+            </router-link>
+        </li>
+        <li class="toolbar-item no-list-style vr-info">
+            <router-link to="/vr">
+            VR
+            </router-link>
+        </li>
+        <li class="toolbar-item no-list-style settings-info">
+            <router-link to="/settings">
+            Settings
+            </router-link>
+        </li>
+        <li class="toolbar-item no-list-style help-info">
+            Help
+        </li>
     </nav> 
 </template>
 <style>
-.toolbar .navbar{
+.toolbar {
   height: 10px;
   background-color: #eee;
 }
@@ -21,19 +33,36 @@
   color: #000;
   text-decoration: none;
 }
-.nav-item {
-  font-size: 10.50px;
-  font-weight: 500
+.toolbar-item {
+  font-size: 10.5px;
+  font-weight: 500;
+  padding: .5rem .4rem;
 }
-.file-info{
+.dropdown-toggle::after {
+  display: none !important;
+}
+/* .file-info{
     position: absolute;
     left: 7px;
 }
-
-.no-list-style{
-    list-style: none !important;
+.edit-info{
+    position: absolute;
+    left: 15px;
 }
-.dropdown-toggle::after{
-    display: none !important;
+.vr-info{
+    position: absolute;
+    left: 53px;
+}
+.settings-info{
+    position: absolute;
+    left: 92px;
+}
+.help-info{
+    position: absolute;
+    left: 147px;
+} */
+
+.no-list-style {
+  list-style: none !important;
 }
 </style>

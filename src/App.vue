@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Toolbar />
-    <div class="my-5">
+    <div class="my-5 page-content">
       <router-view/>
     </div>
   </div>
@@ -24,5 +24,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+#app .page-content{
+  z-index: -1 !important;
 }
 </style>

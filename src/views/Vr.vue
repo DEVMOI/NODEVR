@@ -26,9 +26,4 @@ export default {
   } 
 };
 </script>
-<style>
-.vr {
-  z-index: 2;
-}
-</style>
 

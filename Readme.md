@@ -2,6 +2,8 @@
 
 *Built By NodeGG  and Friends*
 
+<img src="./docs/img/landingPage.JPG" width="425"> <img src="./docs/img/basicStart.JPG" width="425">
+
 ## Introduction
 **NODEVR** is A Desktop Client for Creating Vr Environments. 
 
@@ -25,6 +27,30 @@ ___
 - [ ] Create Fluid transition between start to VR Builder.
 - [ ] Create way to save and load files.
 
+## Local Development
+If using Yarn (Recomended):
+```
+git clone git@github.com:NodeGG/NODEVR.git
+cd NODEVR && npm i
+yarn start
+```
+
+If using NPM
+```
+git clone git@github.com:NodeGG/NODEVR.git
+cd NODEVR && npm i
+npm start
+```
+## Generating Builds
+If using Yarn (Recomended):
+```
+yarn build
+```
+
+If using NPM
+```
+npm run build
+```
 ## Support
 Official Channels:
 - [Node GG Discord Server](https://discord.gg/ZgDHrQa)

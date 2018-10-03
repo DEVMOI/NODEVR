@@ -7,8 +7,8 @@
 
 **TODO**
 
-- [ ] Create Start Page.
-- [ ] Create Fluid transmiton between start and aframe inspector.
+- [ x ] Create Start Page.
+- [ x ] Create Fluid transmiton between start and aframe inspector.
 - [ ] Create way to save and load files.
 
 

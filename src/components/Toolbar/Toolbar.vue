@@ -5,11 +5,11 @@
                 <Dropdown>
                     <template slot="btn">File</template>
                     <template slot="body">
-                        <ul class="d-flex flex-row pl-0 pr-3 m-0">
-                            <li class="btn no-list-style fnt-11" :click="newFile">New</li>
-                            <li class="btn no-list-style fnt-11" :click="openFile">Open</li>
-                            <li class="btn no-list-style fnt-11" :click="saveFile">Save</li>
-                            <li class="btn toolbar-item no-list-style fnt-11">
+                        <ul class="pl-0 pr-3 m-0 mw-80px justify-content-start">
+                            <li class="btn no-list-style w-100 fnt-11" >New</li>
+                            <li class="btn no-list-style w-100 fnt-11" >Open</li>
+                            <li class="btn no-list-style w-100 fnt-11" :click="saveFile">Save</li>
+                            <li class="btn toolbar-item w-100 no-list-style fnt-11">
                                 <router-link to="/settings">
                                     Settings
                                 </router-link>
@@ -22,7 +22,7 @@
                 <Dropdown>
                     <template slot="btn">Edit</template>
                     <template slot="body">
-                        <ul class="d-flex flex-row pl-0 pr-3 m-0">
+                        <ul class="d-flex flex-column pl-0 pr-3 m-0">
                             <li class="btn no-list-style fnt-11" :click="saveFile">Undo</li>
                         </ul>
                     </template>
@@ -37,15 +37,10 @@
                 <Dropdown>
                     <template slot="btn">Help</template>
                     <template slot="body">
-                        <ul class="d-flex flex-row pl-0 pr-3 m-0">
+                        <ul class="pl-0 pr-3 m-0">
                             <li class="btn no-list-style fnt-11">Aframe Documentation</li>
                             <li class="btn no-list-style fnt-11">VueJS Documentation</li>
                             <li class="btn no-list-style fnt-11">Electron Documentation</li>
-                            <li class="btn toolbar-item no-list-style fnt-11">
-                                <router-link to="/settings">
-                                    Settings
-                                </router-link>
-                            </li>
                         </ul>
                     </template>
                 </Dropdown>

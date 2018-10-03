@@ -352,6 +352,9 @@
         background-color: #fff;
         box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .5);
         z-index: 9999;
+        display: inline-flex;
+        flex-flow: column;
+        flex-wrap: wrap;
     }
     .fade-enter-active, .fade-leave-active {
         transition: opacity .1s;

@@ -7,6 +7,7 @@ import VueHotKey from 'v-hotkey';
 import BootstrapVue from 'bootstrap-vue'
 import '@/assets/bootstrap.min.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import '@/assets/devilfish.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'jquery'
 

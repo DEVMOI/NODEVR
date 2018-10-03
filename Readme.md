@@ -2,7 +2,7 @@
 
 *Built By NodeGG  and Friends*
 
-<div class="text-center mx-auto"><img src="./docs/img/landingPage.JPG" width="350"> <img src="./docs/img/basicStart.JPG" width="350"></div>
+<img src="./docs/img/landingPage.JPG" width="425"> <img src="./docs/img/basicStart.JPG" width="425">
 
 ## Introduction
 **NODEVR** is A Desktop Client for Creating Vr Environments. 

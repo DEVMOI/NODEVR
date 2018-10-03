@@ -1,3 +1,7 @@
+html,
+body{
+    height: 100% !important;
+}
 /*Global CSS and Style*/
 .no-list-style {
     list-style: none !important;

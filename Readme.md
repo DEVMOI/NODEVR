@@ -1,15 +1,37 @@
-# NODE VR
+# NODE VR [![DISCORD](https://camo.githubusercontent.com/f38022da52f171a5f26a4c03bc31b4a7112bf09e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636861742d646973636f72642d3732383964612e737667)](https://discord.gg/ZgDHrQa)
 
-[![DISCORD](https://camo.githubusercontent.com/f38022da52f171a5f26a4c03bc31b4a7112bf09e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636861742d646973636f72642d3732383964612e737667)](https://discord.gg/ZgDHrQa)
+*Built By NodeGG  and Friends*
 
+## Introduction
+**NODEVR** is A Desktop Client for Creating Vr Environments. 
+
+#### It's main features are:
+
+(*coming soon*)
+
+
+## Built With
 > [AFRAME](https://aframe.io/) | [VUEJS](https://vuejs.org/) | [ELECTRON](https://electronjs.org/)
 
 
-**TODO**
+## Issues
+There is a list of [Known Issues](https://github.com/NodeGG/NODEVR/issues) (things to be fixed or that aren't yet implemented).
 
-- [ x ] Create Start Page.
-- [ x ] Create Fluid transmiton between start and aframe inspector.
+If you found a bug or have a new idea/feature for the program, [you can report them](https://github.com/NodeGG/NODEVR/issues/new).
+___
+**TODO List**
+
+- [ ] Create Basic Start Page.
+- [ ] Create Fluid transition between start to VR Builder.
 - [ ] Create way to save and load files.
 
+## Support
+Official Channels:
+- [Node GG Discord Server](https://discord.gg/ZgDHrQa)
+- More Coming Soon
 
+## Authors
+- [Warren Gates](https://github.com/Moikapy): Lead developer, bug fixing, new features, designer, and maintainer.
 
+## Credits
+(*coming soon*)

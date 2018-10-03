@@ -17,7 +17,7 @@
 ## Issues
 There is a list of [Known Issues](https://github.com/NodeGG/NODEVR/issues) (things to be fixed or that aren't yet implemented).
 
-If you found a bug or have a new idea/feature for the program, [you can report them](https://github.com/NodeGG/NODEVR/issues/new).
+If you found a bug or have a new idea/feature for the program, [you can report them](https://github.com/NodeGG/NODEVR/issues/new?template=nodevr-issue-template.md).
 ___
 **TODO List**
 
@@ -34,4 +34,5 @@ Official Channels:
 - [Warren Gates](https://github.com/Moikapy): Lead developer, bug fixing, new features, designer, and maintainer.
 
 ## Credits
-(*coming soon*)
+- [Dependencies](https://github.com/NodeGG/NODEVR/network/dependencies)
+- ( *More Coming Soon* )

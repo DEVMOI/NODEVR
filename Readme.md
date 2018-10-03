@@ -34,4 +34,5 @@ Official Channels:
 - [Warren Gates](https://github.com/Moikapy): Lead developer, bug fixing, new features, designer, and maintainer.
 
 ## Credits
-(*coming soon*)
+- [Dependencies](https://github.com/NodeGG/NODEVR/network/dependencies)
+- ( *More Coming Soon* )

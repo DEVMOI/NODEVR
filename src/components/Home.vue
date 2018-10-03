@@ -24,11 +24,4 @@ export default {
   }
 }
 </script>
-<style>
-.fnt-monospace{
-  font-family: monospace;
-}
-.fnt-11{
-  font-size: 11px;
-}
-</style>
+<style></style>

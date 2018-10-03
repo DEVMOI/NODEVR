@@ -3,7 +3,11 @@
 *Built By NodeGG  and Friends*
 
 ## Introduction
-**NODEVR** is A Desktop Client for Creating Vr Environments
+**NODEVR** is A Desktop Client for Creating Vr Environments. 
+
+#### It's main features are:
+
+(*coming soon*)
 
 
 ## Built With
@@ -30,4 +34,4 @@ Official Channels:
 - [Warren Gates](https://github.com/Moikapy): Lead developer, bug fixing, new features, designer, and maintainer.
 
 ## Credits
-- 
+(*coming soon*)

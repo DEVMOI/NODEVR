@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "install": "yarn",
-    "start": "yarn serve:electron",
-    "update": "yarn upgrade",
+    "start": "npm run serve:electron",
     "build": "npm run build:electron",
     "build:electron": "vue-cli-service build:electron",
     "serve:electron": "vue-cli-service serve:electron",

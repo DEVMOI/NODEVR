@@ -27,6 +27,30 @@ ___
 - [ ] Create Fluid transition between start to VR Builder.
 - [ ] Create way to save and load files.
 
+## Local Development
+If using Yarn (Recomended):
+```
+git clone git@github.com:NodeGG/NODEVR.git
+cd NODEVR && npm i
+yarn start
+```
+
+If using NPM
+```
+git clone git@github.com:NodeGG/NODEVR.git
+cd NODEVR && npm i
+npm start
+```
+## Generating Builds
+If using Yarn (Recomended):
+```
+yarn build
+```
+
+If using NPM
+```
+npm run build
+```
 ## Support
 Official Channels:
 - [Node GG Discord Server](https://discord.gg/ZgDHrQa)

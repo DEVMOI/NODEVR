@@ -34,7 +34,8 @@
     }
 
     .vr-tools nav.toolbar .toolbar-item,
-    .vr-tools nav.toolbar .toolbar-item .to-vr {
+    .vr-tools nav.toolbar .toolbar-item .to-vr,
+    .vr-tools nav.toolbar .toolbar-item .to-settings{
         border: none !important;
         color: #fff !important;
     }
@@ -42,5 +43,19 @@
     .vr-tools a-scene.fullscreen .a-canvas {
         top: 30px !important;
         height: 100%;
+        background-color: #ccc;
+    }
+    .components{
+        right: 0;
+        text-align: right!important;
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+        justify-content: end;
+    }
+    .components input{
+        text-align: right !important;
+        display: flex;
+        justify-content: end;
     }
 </style>

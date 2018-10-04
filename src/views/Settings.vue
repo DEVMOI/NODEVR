@@ -1,7 +1,7 @@
 <template> 
     <div class="Settings">
         <Toolbar/>
-        <button class="go-back btn btn-dark"><router-link to="/">Go Back</router-link></button>
+        <button class="go-back btn btn-dark"><router-link to="/vr">Go Back</router-link></button>
     </div>
 </template>
 <script>

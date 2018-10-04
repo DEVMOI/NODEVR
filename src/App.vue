@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <Toolbar/>
+
         <div class="page-content">
             <router-view/>
         </div>
@@ -8,13 +8,10 @@
 </template>
 
 <script>
-    import Toolbar from '@/components/Toolbar/Toolbar'
+
 
     export default {
         name: 'App',
-        components: {
-            Toolbar
-        }
     }
 </script>
 
@@ -29,7 +26,8 @@
         height: 100%;
     }
 
-    #app .page-content {
+    #app .page-content .home,
+    #app .page-content .settings{
         z-index: -1 !important;
         overflow-y: scroll;
         height: 100%;

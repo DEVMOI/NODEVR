@@ -293,7 +293,6 @@
     .df-dropdown__btn {
         display: inline-flex;
         align-items: center;
-        border: 1px solid #efefef;
         cursor: pointer;
         transition: background-color .1s ease;
     }
@@ -355,6 +354,10 @@
         display: inline-flex;
         flex-flow: column;
         flex-wrap: wrap;
+        color: #000;
+    }
+    .df-dropdown__body a{
+        color: #000!important;
     }
     .fade-enter-active, .fade-leave-active {
         transition: opacity .1s;

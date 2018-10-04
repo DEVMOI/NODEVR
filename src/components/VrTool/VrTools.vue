@@ -1,29 +1,46 @@
 <template>
     <div class="vr-tools">
+        <Toolbar></Toolbar>
         <a-scene>
-        <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-        <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-        <a-sky color="#ECECEC"></a-sky>
+            <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
         </a-scene>
     </div>
 </template>
 <script>
-import aframe from "aframe";
-import "aframe-animation-component";
-import "aframe-animation-timeline-component";
-import "aframe-extras";
-import "aframe-particle-system-component";
-import "aframe-physics-system";
-import "@ekolabs/aframe-spritesheet-component";
-import "aframe-text-geometry-component";
-import "aframe-environment-component";
-export default {
-    name:"vrtools"
-};
+    import Toolbar from '@/components/Toolbar/Toolbar'
+    import aframe from "aframe";
+    import "aframe-animation-component";
+    import "aframe-animation-timeline-component";
+    import "aframe-extras";
+    import "aframe-particle-system-component";
+    import "aframe-physics-system";
+    import "@ekolabs/aframe-spritesheet-component";
+    import "aframe-text-geometry-component";
+    import "aframe-environment-component";
+
+    export default {
+        name: "vrtools",
+        components: {
+            Toolbar
+        }
+    };
 </script>
 <style>
-    .vr-tools a-scene.fullscreen .a-canvas{
-        top:15px !important;
+    .vr nav.toolbar {
+        background: #000;
+        justify-content: center;
+        height: 32px !important;
+        overflow: none !important;
+    }
+
+    .vr-tools nav.toolbar .toolbar-item,
+    .vr-tools nav.toolbar .toolbar-item .to-vr {
+        border: none !important;
+        color: #fff !important;
+    }
+
+    .vr-tools a-scene.fullscreen .a-canvas {
+        top: 30px !important;
         height: 100%;
     }
 </style>

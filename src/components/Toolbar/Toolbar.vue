@@ -1,15 +1,15 @@
 <template>
     <div>
-        <nav class="toolbar px-0 navbar justify-content-start">
+        <nav class="toolbar px-0 navbar">
             <li class="pl-1 toolbar-item no-list-style file-info">
                 <Dropdown>
                     <template slot="btn">File</template>
                     <template slot="body">
                         <ul class="pl-0 pr-3 m-0 mw-80px justify-content-start">
-                            <li class="btn no-list-style w-100 fnt-11" >New</li>
-                            <li class="btn no-list-style w-100 fnt-11" >Open</li>
-                            <li class="btn no-list-style w-100 fnt-11" :click="saveFile">Save</li>
-                            <li class="btn toolbar-item w-100 no-list-style fnt-11">
+                            <li class="btn no-list-style w-100 fnt-11 fnt-black" >New</li>
+                            <li class="btn no-list-style w-100 fnt-11 fnt-black" >Open</li>
+                            <li class="btn no-list-style w-100 fnt-11 fnt-black" :click="saveFile">Save</li>
+                            <li class="btn w-100 no-list-style fnt-11 fnt-black">
                                 <router-link to="/settings">
                                     Settings
                                 </router-link>
@@ -23,13 +23,13 @@
                     <template slot="btn">Edit</template>
                     <template slot="body">
                         <ul class="d-flex flex-column pl-0 pr-3 m-0">
-                            <li class="btn no-list-style fnt-11" :click="saveFile">Undo</li>
+                            <li class="btn no-list-style fnt-11 fnt-black" :click="saveFile">Undo</li>
                         </ul>
                     </template>
                 </Dropdown>
             </li>
             <li class="toolbar-item no-list-style vr-info">
-                <router-link to="/vr">
+                <router-link class="to-vr" to="/vr">
                     VR
                 </router-link>
             </li>
@@ -38,9 +38,9 @@
                     <template slot="btn">Help</template>
                     <template slot="body">
                         <ul class="pl-0 pr-3 m-0">
-                            <li class="btn no-list-style fnt-11">Aframe Documentation</li>
-                            <li class="btn no-list-style fnt-11">VueJS Documentation</li>
-                            <li class="btn no-list-style fnt-11">Electron Documentation</li>
+                            <li class="btn no-list-style fnt-11 fnt-black">Aframe Documentation</li>
+                            <li class="btn no-list-style fnt-11 fnt-black">VueJS Documentation</li>
+                            <li class="btn no-list-style fnt-11 fnt-black">Electron Documentation</li>
                         </ul>
                     </template>
                 </Dropdown>
@@ -66,9 +66,10 @@
     }
 </script>
 <style>
-    .toolbar {
+   nav.toolbar {
         height: 10px;
         background-color: #eee;
+        justify-content: start;
     }
 
     .toolbar a:hover,

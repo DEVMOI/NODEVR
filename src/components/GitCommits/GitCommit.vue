@@ -1,5 +1,5 @@
 <template>
-    <div id="GitCommits">
+    <div id="GitCommits" class="d-flex justify-content-center flex-column p-5">
         <h5>Latest Commits</h5>
         <div class="row text-center justify-content-center">
             <div class="px-2" v-for="branch in branches">
@@ -68,6 +68,12 @@
 </script>
 
 <style >
+    #GitCommits{
+        background-color:#eee;
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+    }
     #GitCommits a {
         text-decoration: none;
         color: #f66;

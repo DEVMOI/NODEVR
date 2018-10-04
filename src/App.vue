@@ -26,8 +26,7 @@
         height: 100%;
     }
 
-    #app .page-content .home,
-    #app .page-content .settings{
+    #app .page-content{
         z-index: -1 !important;
         overflow-y: scroll;
         height: 100%;

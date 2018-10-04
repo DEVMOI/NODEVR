@@ -5,11 +5,11 @@
                 <Dropdown>
                     <template slot="btn">File</template>
                     <template slot="body">
-                        <ul class="pl-0 pr-3 m-0 mw-80px justify-content-start">
-                            <li class="btn no-list-style w-100 fnt-11 fnt-black" >New</li>
-                            <li class="btn no-list-style w-100 fnt-11 fnt-black" >Open</li>
-                            <li class="btn no-list-style w-100 fnt-11 fnt-black" :click="saveFile">Save</li>
-                            <li class="btn w-100 no-list-style fnt-11 fnt-black">
+                        <ul class=" d-flex flex-column text-left p-0">
+                            <li class="p-2 no-list-style w-100 fnt-11 fnt-black" >New</li>
+                            <li class="p-2 no-list-style w-100 fnt-11 fnt-black" >Open</li>
+                            <li class="p-2 no-list-style w-100 fnt-11 fnt-black" :click="saveFile">Save</li>
+                            <li class="p-2 w-100 no-list-style fnt-11 fnt-black">
                                 <router-link to="/settings">
                                     Settings
                                 </router-link>
@@ -23,7 +23,7 @@
                     <template slot="btn">Edit</template>
                     <template slot="body">
                         <ul class="d-flex flex-column pl-0 pr-3 m-0">
-                            <li class="btn no-list-style fnt-11 fnt-black" :click="saveFile">Undo</li>
+                            <li class="p-2 no-list-style fnt-11 fnt-black" :click="saveFile">Undo</li>
                         </ul>
                     </template>
                 </Dropdown>
@@ -37,10 +37,15 @@
                 <Dropdown>
                     <template slot="btn">Help</template>
                     <template slot="body">
-                        <ul class="pl-0 pr-3 m-0">
-                            <li class="btn no-list-style fnt-11 fnt-black">Aframe Documentation</li>
-                            <li class="btn no-list-style fnt-11 fnt-black">VueJS Documentation</li>
-                            <li class="btn no-list-style fnt-11 fnt-black">Electron Documentation</li>
+                        <ul class="d-flex flex-column pl-0 pr-3 m-0">
+                            <li class="p-2 no-list-style fnt-11 fnt-black"><a href="https://aframe.io" target="_blank">Aframe Documentation</a></li>
+                            <li class="p-2 no-list-style fnt-11 fnt-black"><a href="https://vuejs.org" target="_blank">VueJS Documentation</a></li>
+                            <li class="p-2 no-list-style fnt-11 fnt-black"><a href="https://electron.org" target="_blank">Electron Documentation</a></li>
+                            <li class="p-2 no-list-style fnt-11 fnt-black">
+                                <router-link to="/">
+                                    About
+                                </router-link>
+                            </li>
                         </ul>
                     </template>
                 </Dropdown>
@@ -82,6 +87,7 @@
         font-size: 10.5px;
         font-weight: 500;
         padding: .5rem .4rem;
+        text-align: left;
     }
 
     .dropdown-toggle::after {

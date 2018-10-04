@@ -1,9 +1,19 @@
 <template> 
-    <div id="Settings">
+    <div class="Settings">
+        <Toolbar/>
         <button class="go-back btn btn-dark"><router-link to="/">Go Back</router-link></button>
     </div>
 </template>
-<style>
+<script>
+    import Toolbar from '@/components/Toolbar/Toolbar';
+    export default {
+        name:'Settings',
+        components:{
+            Toolbar
+        }
+    }
+</script>
+<style scoped>
 .go-back{
     position: absolute;
     bottom: 0;

@@ -45,6 +45,9 @@
         height: 100%;
         background-color: #ccc;
     }
+    .a-enter-vr-button{
+        top: 10px;
+    }
     .components{
         right: 0;
         text-align: right!important;

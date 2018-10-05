@@ -1,5 +1,5 @@
 <template>
-    <div class="home d-flex flex-column">
+    <div class="about d-flex flex-column">
         <GitCommit class="mt-4"/>
     </div>
 </template>
@@ -16,7 +16,7 @@
     }
 </script>
 <style scoped>
-    .home{
+    .about{
         background-color:#eee;
         overflow: hidden;
         height:100%;

@@ -25,7 +25,7 @@
 
     #app .page-content{
         z-index: -1 !important;
-        overflow-y: scroll;
+        overflow-y: hidden;
         height: 100%;
     }
 </style>

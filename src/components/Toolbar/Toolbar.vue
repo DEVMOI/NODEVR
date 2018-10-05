@@ -2,25 +2,27 @@
     <div>
         <nav class="toolbar px-0 navbar">
             <li class="toolbar-item no-list-style vr-info">
-                <router-link class="to-vr" to="/vr">
-                    VR Tools
-                </router-link>
+                VR Tools
             </li>
-            <li class="pl-1 toolbar-item no-list-style settings-info">
-                <router-link class="to-settings" to="/settings">
-                    Settings
-                </router-link>
-            </li>
+            <!--<li class="pl-1 toolbar-item no-list-style settings-info">-->
+            <!--<router-link class="to-settings" to="/settings">-->
+            <!--Settings-->
+            <!--</router-link>-->
+            <!--</li>-->
             <li class="toolbar-item no-list-style help-info">
                 <Dropdown>
                     <template slot="btn">Help</template>
                     <template slot="body">
                         <ul class="d-flex flex-column pl-0 pr-3 m-0">
-                            <li class="p-2 no-list-style fnt-11 fnt-black"><a href="https://aframe.io" target="_blank">Aframe Documentation</a></li>
-                            <li class="p-2 no-list-style fnt-11 fnt-black"><a href="https://vuejs.org" target="_blank">VueJS Documentation</a></li>
-                            <li class="p-2 no-list-style fnt-11 fnt-black"><a href="https://electronjs.org" target="_blank">Electron Documentation</a></li>
+                            <li class="p-2 no-list-style fnt-11 fnt-black"><a href="https://aframe.io" target="_blank">Aframe
+                                Documentation</a></li>
+                            <li class="p-2 no-list-style fnt-11 fnt-black"><a href="https://vuejs.org" target="_blank">VueJS
+                                Documentation</a></li>
+                            <li class="p-2 no-list-style fnt-11 fnt-black"><a href="https://electronjs.org"
+                                                                              target="_blank">Electron Documentation</a>
+                            </li>
                             <li class="p-2 no-list-style fnt-11 fnt-black">
-                                <router-link to="/">
+                                <router-link target="_blank" to="/about">
                                     About
                                 </router-link>
                             </li>
@@ -40,14 +42,14 @@
             Dropdown
         },
         methods: {
-            saveFile(e){
+            saveFile(e) {
                 console.log('file save');
             }
         }
     }
 </script>
 <style>
-   nav.toolbar {
+    nav.toolbar {
         height: 10px;
         background-color: #eee;
         justify-content: start;

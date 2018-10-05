@@ -1,5 +1,5 @@
 <template>
-    <div id="GitCommits" class="d-flex justify-content-center flex-column p-5">
+    <div id="GitCommits" class="d-flex justify-content-center flex-column px-5 py-2 w-100">
         <h5>Latest Commits</h5>
         <div class="row text-center justify-content-center">
             <div class="px-2" v-for="branch in branches">
@@ -12,7 +12,7 @@
             </div>
         </div>
         <p class="fnt-monospace">NodeGG/NodeVR@{{ currentBranch }}</p>
-        <ul class="d-flex flex-column justify-content-center p-0">
+        <ul class="d-flex flex-column justify-content-center p-0 m-0">
             <li class="no-list-style fnt-11 fnt-monospace"" v-for="record in commits">
                 <a :href="record.html_url" target="_blank" class="commit">{{ record.sha.slice(0, 7) }}</a>
                 - <span class="message">{{ record.commit.message | truncate }}</span><br>
@@ -69,10 +69,7 @@
 
 <style >
     #GitCommits{
-        background-color:#eee;
-        position: fixed;
-        right: 25px;
-        bottom: 25px;
+
     }
     #GitCommits a {
         text-decoration: none;

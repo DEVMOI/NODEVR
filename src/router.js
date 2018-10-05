@@ -20,6 +20,11 @@ export default new Router({
       path: '/vr',
       name: 'vr',
       component: () => import('./views/Vr.vue')
-    }
+    },
+      {
+          path: '/about',
+          name: 'about',
+          component: () => import('./views/About.vue')
+      }
   ]
 })

@@ -6,15 +6,17 @@
     </div>
 </template>
 <script>
-    import aframe from "aframe";
+    import "aframe";
     import "aframe-animation-component";
     import "aframe-animation-timeline-component";
     import "aframe-extras";
     import "aframe-particle-system-component";
     import "aframe-physics-system";
-    import "@ekolabs/aframe-spritesheet-component";
+    // import "@ekolabs/aframe-spritesheet-component";
     import "aframe-text-geometry-component";
     import "aframe-environment-component";
+
+    // const Dialogs = require('dialogs');
 
     export default {
         name: "vrtools"
@@ -31,14 +33,14 @@
         top: 10px;
     }
 
-    .components {
-        right: 0;
-        text-align: right !important;
-        display: flex;
-        flex-wrap: wrap;
-        flex-flow: column;
-        justify-content: end;
-    }
+    /*.components {*/
+        /*right: 0;*/
+        /*text-align: right !important;*/
+        /*display: flex;*/
+        /*flex-wrap: wrap;*/
+        /*flex-flow: column;*/
+        /*justify-content: end;*/
+    /*}*/
 
     .components input {
         text-align: right !important;

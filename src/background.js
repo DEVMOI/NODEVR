@@ -1,6 +1,6 @@
 'use strict'
 
-import {app, protocol, BrowserWindow} from 'electron';
+import {app, protocol, BrowserWindow, ipcMain} from 'electron';
 import * as path from 'path';
 import {format as formatUrl} from 'url';
 import {
@@ -25,9 +25,43 @@ function createMainWindow() {
         height:600,
         width:1000,
         minHeight: 600,
-        minWidth: 1000
+        minWidth: 1000,
+        preload: __dirname + './src/assets/prompt.js'
     });
+    // Fpr prompr
 
+
+    var promptResponse
+    ipcMain.on('prompt', function(eventRet, arg) {
+        promptResponse = null
+        var promptWindow = new BrowserWindow({
+            width: 200,
+            height: 100,
+            show: false,
+            resizable: false,
+            movable: false,
+            alwaysOnTop: true,
+            frame: false
+        })
+        arg.val = arg.val || ''
+        const promptHtml = '<label for="val">' + arg.title + '</label>\
+    <input id="val" value="' + arg.val + '" autofocus />\
+    <button onclick="require(\'electron\').ipcRenderer.send(\'prompt-response\', document.getElementById(\'val\').value);window.close()">Ok</button>\
+    <button onclick="window.close()">Cancel</button>\
+    <style>body {font-family: sans-serif;} button {float:right; margin-left: 10px;} label,input {margin-bottom: 10px; width: 100%; display:block;}</style>'
+        promptWindow.loadURL('data:text/html,' + promptHtml)
+        promptWindow.show()
+        promptWindow.on('closed', function() {
+            eventRet.returnValue = promptResponse
+            promptWindow = null
+        })
+    })
+    ipcMain.on('prompt-response', function(event, arg) {
+        if (arg === ''){ arg = null }
+        promptResponse = arg
+    })
+
+    //
     if (isDevelopment) {
         // Load the url of the dev server if in development mode
         window.loadURL(process.env.WEBPACK_DEV_SERVER_URL)

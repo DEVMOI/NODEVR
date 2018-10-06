@@ -1,16 +1,14 @@
-import 'aframe';
 const New = () => {
     var scene = document.querySelector('a-scene');
 
     if (scene.hasLoaded) {
-        run();
+        clear();
     } else {
         scene.addEventListener('loaded', run);
     }
 
-    function run () {
-        var entity = scene.querySelector('a-entity');
-        entity.setAttribute('material', 'color', 'red');
+    function clear () {
+        scene.clear();
     }
 };
 export default New;

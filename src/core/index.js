@@ -1,1 +1,1 @@
-import * from 'file/new';
+import New from './file/new';
